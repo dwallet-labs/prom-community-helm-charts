@@ -4017,6 +4017,11 @@ prometheus:
     ##
     enableRemoteWriteReceiver: false
 
+    ## set --web.remote-write-receiver.accepted-protobuf-messages flag on prometheus-server
+    ##
+    remoteWriteReceiverMessageVersions:
+      - "V1.0"
+
     ## Name of the external label used to denote replica name
     ##
     replicaExternalLabelName: ""
